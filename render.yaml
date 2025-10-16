@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: alisa-bot
+    env: python
+    startCommand: bash start.sh
+    plan: free
+    region: oregon
+    branch: master
+    repo: https://github.com/hasanjozilov-rgb/Alisa-bot
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
