@@ -7,4 +7,4 @@ services:
     startCommand: bash start.sh
     envVars:
       - key: BOT_TOKEN
-        value: Your_bot_token
+        value: 8283247128:AAGtgn_qLUT8tYeKkviAIDhxqGe70vI4oYY
