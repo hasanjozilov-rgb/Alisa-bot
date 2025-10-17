@@ -32,7 +32,7 @@ async def ijara(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def ttj(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
 "🏢 *TTJga joylashish tartibi:*\n\n"
-        "1. Kantrakt.edu.uz saytidan shaxsiy kabinetga kiring undan manyuni tanlang talabalar turar joyi hamda ariza\n"
+        "1. Kantrakt.edu.uz saytidan shaxsiy kabinetga kiring undan menyuni tanlang talabalar turar joyi hamda ariza\n"
         "2. shu tariqa online ariza yuboring\n"
         "3. Hujjatlarni TTJ bo‘limiga olib boring\n\n"
         "📌 Joylashish muddati va narxlar haqida institutdan aniqlashtiring.")
@@ -44,12 +44,12 @@ async def kontrakt(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "1. https://kontrakt.edu.uz saytiga kiring\n"
         "2. Shaxsiy kabinetga kirib, shartnomani yuklab oling\n"
         "3. To‘lov usullari:\n"
-        "   - PayMe, Click, Zoomrad, Upay, Oson, Anorbank. Agar online to'lov qilishni bilmasangiz quydagi link orqali o'rganiahingiz mumkin yoki istalgan bank orqaliali amalga oshiring\n"
+        "   - PayMe, Click, Zoomrad, Upay, Oson, Anorbank. Agar online to'lov qilishni bilmasangiz quydagi link (https://youtu.be/Ubh9L6aCssA?si=_GF8fG0Ek9_zu2mf) orqali o'rganiahingiz mumkin yoki istalgan bank orqali amalga oshiring\n"
         "4. To‘lov cheki (kvitansiya) ni yuklab oling yoki chop eting\n\n"
         "📌 To‘lovni belgilangan muddatda amalga oshiring.")
 # Botni ishga tushirish
 def main():
-    app = Application.builder().token(os.getenv("BOT_TOKEN")).build()
+    app = Application.builder().token(os.getenv("8283247128:AAGtgn_qLUT8tYeKkviAIDhxqGe70vI4oYY")).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("stop", stop))
     app.add_handler(MessageHandler(filters.Regex("Ijara"), ijara))
