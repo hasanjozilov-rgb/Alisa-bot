@@ -2,11 +2,9 @@ services:
   - type: worker
     name: alisa-bot
     env: python
-    startCommand: bash start.sh
     plan: free
-    region: oregon
-    branch: master
-    repo: https://github.com/hasanjozilov-rgb/Alisa-bot
+    buildCommand: ""
+    startCommand: bash start.sh
     envVars:
       - key: BOT_TOKEN
-        sync: false
+        value: YOUR_TELEGRAM_BOT_TOKEN
