@@ -49,7 +49,7 @@ async def kontrakt(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "📌 To‘lovni belgilangan muddatda amalga oshiring.")
 # Botni ishga tushirish
 def main():
-    app = Application.builder().token(os.getenv("8283247128:AAGtgn_qLUT8tYeKkviAIDhxqGe70vI4oYY")).build()
+    app = Application.builder().token(os.getenv("bot_token")).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("stop", stop))
     app.add_handler(MessageHandler(filters.Regex("Ijara"), ijara))
